@@ -17,6 +17,49 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-darnk bg-dark">
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" id="highscore-button" href="#">View High Scores</span></a>
+                </li>
+            </ul>
+            <span id="gameTimer" class="navbar-text text-light">
+                Time left: -
+            </span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row d-block">
+            <div class="col-lg-12"></div>
+        </div>
+        <div class="row d-block" id="welcome-screen">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <h4>Welcome to my Code Quiz! Press the button below to begin:</h4>
+                <button id="start-game" class="btn btn-primary"><span>Start Game</span></button>
+            </div>
+            <div class="col-lg-2"></div>
+
+
+        </div>
+        <div class="row d-none" id="question-box">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <h4 id="current-question"></h4>
+                <button id="button-a" class="btn btn-primary" value="a"><span id="choice-a"></span></button>
+                <br><br>
+                <button id="button-b" class="btn btn-primary" value="b"><span id="choice-b"></span></button>
+                <br><br>
+                <button id="button-c" class="btn btn-primary" value="c"><span id="choice-c"></span></button>
+                <br><br>
+                <button id="button-d" class="btn btn-primary" value="d"><span id="choice-d"></span></button>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+
+        <script src="./script.js"></script>
 </body>
 
 </html>
