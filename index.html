@@ -38,7 +38,7 @@
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
                 <h4>Welcome to my Code Quiz! Press the button below to begin:</h4>
-                <button id="start-game" class="btn btn-primary"><span>Start Game</span></button>
+                <button class="btn btn-primary start-game"><span>Start Game</span></button>
             </div>
             <div class="col-lg-2"></div>
 
@@ -48,16 +48,72 @@
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
                 <h4 id="current-question"></h4>
-                <button id="button-a" class="btn btn-primary" value="a"><span id="choice-a"></span></button>
+                <button id="button-a" class="btn btn-primary ques-btn" value="A"><span id="choice-a"></span></button>
                 <br><br>
-                <button id="button-b" class="btn btn-primary" value="b"><span id="choice-b"></span></button>
+                <button id="button-b" class="btn btn-primary ques-btn" value="B"><span id="choice-b"></span></button>
                 <br><br>
-                <button id="button-c" class="btn btn-primary" value="c"><span id="choice-c"></span></button>
+                <button id="button-c" class="btn btn-primary ques-btn" value="C"><span id="choice-c"></span></button>
                 <br><br>
-                <button id="button-d" class="btn btn-primary" value="d"><span id="choice-d"></span></button>
+                <button id="button-d" class="btn btn-primary ques-btn" value="D"><span id="choice-d"></span></button>
+                <br><br>
+                <h3 id="last-answer"></h3>
             </div>
             <div class="col-lg-2"></div>
         </div>
+
+        <div class="row d-none" id="game-over">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <h4 id="current-question">Game Over</h4>
+                <button class="btn btn-primary start-game" value="Play again"><span id="again-text">Play
+                        again</span></button>
+                <br><br>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+
+        <div class="row d-none" id="high-scores">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <h4 id="current-question">High score!</h4>
+                <span id="highscore-blurb">Please enter your initirals below and select "Save Score" if you would like
+                    to save your
+                    score.</span>
+                <form>
+                    <div class="form-row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                            <input type="text" id="initials" class="form-control" placeholder="CTS">
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </form>
+                <button class="btn btn-secondary start-game" value="restart"><span
+                        id="restart-text">Restart</span></button>
+                <br><br>
+                <button class="btn btn-primary save-game" value="Save score"><span id="save-text">Save Score
+                    </span></button>
+                <br><br>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+
+        <div class="row d-none" id="high-score-list">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <h4 id="current-question">High scores:</h4>
+                <ul class="list-group">
+                </ul>
+                <button class="btn btn-secondary start-game" value="restart"><span
+                        id="restart-text">Restart</span></button>
+                <br><br>
+                <button class="btn btn-primary clear-list" value="Clear scores"><span id="clear-text">Clear list
+                    </span></button>
+                <br><br>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+
 
         <script src="./script.js"></script>
 </body>
